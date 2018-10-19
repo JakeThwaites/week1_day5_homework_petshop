@@ -88,7 +88,7 @@ def sell_pet_to_customer(pet_shop, pet, customer)
      return
   end
 
-  if customer_can_afford_pet(customer, pet) == true
+  if customer_can_afford_pet(customer, pet)
     price = pet[:price]
 
     remove_customer_cash(customer, price)
